@@ -2,106 +2,106 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import academicAllyImg from "@/public/academicAlly.png";
+import audioDeepfakeImg from "@/public/audioDeepfake.png";
+import indoorNavImg from "@/public/indoorNav.png";
+import deepResearchImg from "@/public/deepResearch.png";
+import patchItImg from "@/public/patchIt.png";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  { name: "Home", hash: "#home" },
+  { name: "About", hash: "#about" },
+  { name: "Projects", hash: "#projects" },
+  { name: "Skills", hash: "#skills" },
+  { name: "Experience", hash: "#experience" },
+  { name: "Contact", hash: "#contact" },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "University of Toledo",
     location: "Toledo, OH",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Pursuing Bachelor of Science in Computer Science and Engineering. Relevant coursework includes Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Architecture, Discrete Structures, and Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2025 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "AcademicAlly (ACM Thapar Project)",
+    location: "Thapar Institute of Engineering & Technology",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Built and maintained a university timetable parser for 10,000+ students. Led backend design using Python, Pandas, and Openpyxl, reducing parsing errors by 95%. Managed live deployment with continuous updates and bug tracking.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jul 2024 - Aug 2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "AcademicAlly",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "University timetable parser for 10,000+ students. Built with Python, Pandas, and Openpyxl, handling backend and deployment.",
+    tags: ["Python", "Pandas", "Openpyxl", "Full-Stack", "University Tools"],
+    imageUrl: academicAllyImg,
+    githubUrl: "https://github.com/Aneesh-382005/AcademicAlly",
+    demoUrl: "https://timetable.acmthapar.in/",
   },
   {
-    title: "rmtDev",
+    title: "PatchIt - Civic Infrastructure Monitoring",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "YOLO-based pothole detection with 85.8% precision. Explored MiDaS & Depth Anything V2 for 3D geometry and cost estimation.",
+    tags: ["Python", "YOLO", "Computer Vision", "Depth Estimation", "Hackathon"],
+    imageUrl: patchItImg,
+    githubUrl: "https://github.com/kshitiz510/patch-it",
+    demoUrl: "",
   },
   {
-    title: "Word Analytics",
+    title: "Audio Deepfake Detection",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Fine-tuned AASIST & AASIST-L on ASVspoof 2019, achieving 3.37% EER and 0.10 t-DCF on a constrained GPU setup.",
+    tags: ["Python", "PyTorch", "Deep Learning", "Audio AI", "Graph Attention"],
+    imageUrl: audioDeepfakeImg,
+    githubUrl: "https://github.com/Aneesh-382005/Audio-Deepfake-Detection",
+    demoUrl: "",
   },
+  /*
+  {
+    title: "Plug-and-Play Indoor Navigation",
+    description:
+      "Full-stack indoor navigation with real-time floorplan editing & route rendering. Built with Next.js, FastAPI, and Supabase.",
+    tags: ["Next.js", "FastAPI", "Supabase", "Full-Stack", "Realtime"],
+    imageUrl: indoorNavImg,
+    githubUrl: "https://github.com/Aneesh-382005/smart-store-map",
+    demoUrl: "https://smart-store-map.vercel.app/admin",
+  },
+  */
+  {
+    title: "DeepResearch - Multi-Agent Research Assistant",
+    description:
+      "Multi-agent pipeline using LangGraph, Tavily, and Groq LLaMA3 for automated research with citation-aware RAG.",
+    tags: ["Python", "LangGraph", "RAG", "FAISS", "HuggingFace"],
+    imageUrl: deepResearchImg,
+    githubUrl: "https://github.com/Aneesh-382005/DeepResearch",
+    demoUrl: "",
+  },
+
+  
+  
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  // Machine Learning & AI
+  "Deep Learning", "PyTorch", "TensorFlow", "Transformers (NLP, RAG)", "CNNs", "GANs", "OCR", "Depth Estimation",
+
+  // Computer Vision & Data Analytics
+  "OpenCV", "PyTesseract", "Image Segmentation", "Object Detection", "ROI/3D Vision", "Pandas", "NumPy", "Scikit-learn", "Matplotlib",
+
+  // Programming & Development
+  "Python", "Java", "C", "C++", "Next.js", "FastAPI", "Supabase", "Streamlit", "TypeScript",
+
+  // Tools & Platforms
+  "Git", "CUDA", "Kaggle", "VS Code", "Google APIs", "Manim",
+
+  // Web/Full-Stack
+  "React", "Tailwind", "Prisma", "MongoDB", "PostgreSQL", "Framer Motion",
 ] as const;
