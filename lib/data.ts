@@ -90,18 +90,24 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  // Machine Learning & AI
-  "Deep Learning", "PyTorch", "TensorFlow", "Transformers (NLP, RAG)", "CNNs", "GANs", "OCR", "Depth Estimation",
+  // Software Engineering & Full-Stack
+  "TypeScript", "Python", "Java",
+  "Next.js", "React", "FastAPI",
+  "Supabase", "PostgreSQL",
+  "API Design", "System Design",
 
-  // Computer Vision & Data Analytics
-  "OpenCV", "PyTesseract", "Image Segmentation", "Object Detection", "ROI/3D Vision", "Pandas", "NumPy", "Scikit-learn", "Matplotlib",
+  // Machine Learning Engineering
+  "PyTorch", "Deep Learning",
+  "Transformers", "RAG Systems", "FAISS",
+  "MLOps",
 
-  // Programming & Development
-  "Python", "Java", "C", "C++", "Next.js", "FastAPI", "Supabase", "Streamlit", "TypeScript",
+  // Applied AI
+  "CV Pipelines (OpenCV, Detection, OCR)",
 
-  // Tools & Platforms
-  "Git", "CUDA", "Kaggle", "VS Code", "Google APIs", "Manim",
+  // Data & Analysis
+  "Pandas", "NumPy", "Scikit-learn",
 
-  // Web/Full-Stack
-  "React", "Tailwind", "Prisma", "MongoDB", "PostgreSQL", "Framer Motion",
+  // Infra & Deployment
+  "Git", "CUDA",
+  "Vercel", "Oracle Cloud (OCI)", "Cloudflare",
 ] as const;
