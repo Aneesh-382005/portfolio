@@ -22,15 +22,15 @@ export const experiencesData = [
     title: "University of Toledo",
     location: "Toledo, OH",
     description:
-      "Pursuing Bachelor of Science in Computer Science and Engineering. Relevant coursework includes Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Architecture, Discrete Structures, and Artificial Intelligence.",
+      "Pursuing Bachelor of Science in Computer Science & Engineering. Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Architecture, Discrete Structures, and Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
-    date: "2025 - Present",
+    date: "Aug 2025 - Present",
   },
   {
-    title: "AcademicAlly (ACM Thapar Project)",
+    title: "AcademicAlly - ACM Thapar Society Project",
     location: "Thapar Institute of Engineering & Technology",
     description:
-      "Built and maintained a university timetable parser for 10,000+ students. Led backend design using Python, Pandas, and Openpyxl, reducing parsing errors by 95%. Managed live deployment with continuous updates and bug tracking.",
+      "Built and maintained a production-grade university timetable parser used by 10,000+ students. Designed the backend using Python, Pandas, and Openpyxl, cutting parsing errors by 95%. Deployed and actively maintained with ongoing improvements and updates.",
     icon: React.createElement(CgWorkAlt),
     date: "Jul 2024 - Aug 2025",
   },
