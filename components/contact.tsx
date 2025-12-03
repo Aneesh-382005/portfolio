@@ -10,29 +10,28 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPending, setIsPending] = useState(false);
   const [formKey, setFormKey] = useState(0);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    setIsSubmitting(true);
+    setIsPending(true);
 
-    try {
-      const { data, error } = await sendEmail(formData);
+    const { data, error } = await sendEmail(formData);
+    setIsPending(false);
 
-      if (error) {
+    if (error) {
+      if (error.includes("A component suspended while responding to synchronous input")) {
+        toast.error("Please try again.");
+      } else {
         toast.error(error);
-        return;
       }
-
-      toast.success("Email sent successfully!");
-      setFormKey((prevKey) => prevKey + 1); // Reset the form
-    } catch (e) {
-      toast.error("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+      return;
     }
+
+    toast.success("Email sent successfully!");
+    setFormKey((prevKey) => prevKey + 1); // Reset the form
   };
 
   return (
@@ -82,7 +81,7 @@ export default function Contact() {
           required
           maxLength={5000}
         />
-        <SubmitBtn pending={isSubmitting} />
+        <SubmitBtn pending={isPending} />
       </form>
     </motion.section>
   );
