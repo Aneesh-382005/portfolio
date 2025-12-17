@@ -92,7 +92,7 @@ export default function Intro() {
           href="/Aneesh_Grover_Resume.pdf"
           download
         >
-          Download CV{" "}
+          Get My Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
