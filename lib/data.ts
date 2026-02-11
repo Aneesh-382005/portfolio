@@ -7,6 +7,7 @@ import audioDeepfakeImg from "@/public/audioDeepfake.png";
 import indoorNavImg from "@/public/indoorNav.png";
 import deepResearchImg from "@/public/deepResearch.png";
 import patchItImg from "@/public/patchIt.png";
+import playgroundImg from "@/public/playground.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -46,6 +47,16 @@ export const projectsData = [
     githubUrl: "https://github.com/Aneesh-382005/AcademicAlly",
     demoUrl: "https://timetable.acmthapar.in/",
   },
+  {
+    title: "Playground: Text-to-Manim",
+    description:
+      "Turn algorithm and math ideas into rendered Manim CE animations from a simple prompt.",
+    tags: ["React", "FastAPI", "Manim CE", "Groq", "AI", "Full-Stack", "Visualization"],
+    imageUrl: playgroundImg,
+    githubUrl: "https://github.com/Aneesh-382005/Playground",
+    demoUrl: "https://playground.aneeshgrover.me/",
+  },
+
   {
     title: "PatchIt - Civic Infrastructure Monitoring",
     description:
