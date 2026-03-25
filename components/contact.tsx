@@ -57,8 +57,12 @@ export default function Contact() {
         Please contact me{" "}
         <a className="underline" href="mailto:aneesh.grover03@gmail.com">
           directly
-        </a>{" "}
-        or through this form.
+        </a>
+        , through this form, or{" "}
+        <a className="underline" href="https://cal.com/aneesh-grover" target="_blank" rel="noopener noreferrer">
+          schedule a meeting
+        </a>
+        .
       </p>
 
       <form
