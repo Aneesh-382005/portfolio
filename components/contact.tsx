@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import LiveTime from "./live-time";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -52,6 +53,7 @@ export default function Contact() {
         once: true,
       }}
     >
+      <LiveTime />
       <SectionHeading>Contact me</SectionHeading>
       <p>
         Please contact me{" "}
