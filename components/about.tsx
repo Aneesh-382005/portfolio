@@ -19,23 +19,12 @@ export default function About() {
         >
             <SectionHeading>About me</SectionHeading>
             <p className="mb-3">
-                I'm a{" "}
-                <span className="font-medium">
-                    Computer Science undergrad at the University of Toledo
-                </span>{" "}
-                who enjoys creating things that actually get used. I've worked on{" "}
-                <span className="font-medium">
-                    university tools, ML projects, and full-stack apps
-                </span>
-                . I just like learning new stuff and applying it.
+                I'm a <span className="font-medium">CS undergrad at the University of Toledo</span> who enjoys building and working with people who care about what they do. Whether it's a{" "}
+                <span className="font-medium">distributed systems framework, a university tool, or a codegen agent</span>, I build because it interests me, not because I was told to. I pick up new technologies as I go and learn by doing. I'm not chasing perfect, I'm chasing interesting.
             </p>
 
             <p>
-                <span className="italic">Outside of class</span>, I like showing up at
-                hackathons, talking to new people, and occasionally winning stuff.
-                Otherwise, I'm probably gaming, listening to music, or just exploring
-                some random ideas. If you're building something cool, want to
-                collaborate, or just chat about code and philosophy - I'm around.
+                <span className="italic">Outside of building</span>, you'll find me at hackathons, talking to people doing cool things, gaming, or going down some random stuff at 2AM. If you're working on something hard and moving fast, let's talk.
             </p>
         </motion.section>
     );

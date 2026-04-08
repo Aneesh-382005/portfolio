@@ -61,8 +61,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-      <span className="font-bold">Hey, I'm Aneesh.</span> I'm a <span className="font-bold">CSE undergrad</span> who loves doing <span className="italic">what excites me</span>. Right now, I'm exploring <a href="#projects" className="underline">all sorts of systems</a> and figuring out how to make them actually work.
-
+      <span className="font-bold">Hey, I'm Aneesh.</span> I obsess over building and learning how things work. <a href="#projects" className="underline font-semibold">Systems, tools, pipelines</a>, whatever I find interesting. <span className="italic"></span>
 
       </motion.h1>
 
