@@ -8,6 +8,7 @@ import indoorNavImg from "@/public/indoorNav.png";
 import deepResearchImg from "@/public/deepResearch.png";
 import patchItImg from "@/public/patchIt.png";
 import playgroundImg from "@/public/playground.png";
+import campusComputeImg from "@/public/campusCompute.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -23,7 +24,7 @@ export const experiencesData = [
     title: "University of Toledo",
     location: "Toledo, OH",
     description:
-      "Pursuing Bachelor of Science in Computer Science & Engineering. Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Computer Architecture, Discrete Structures, and Artificial Intelligence.",
+      "Pursuing Bachelor of Science in Computer Science & Engineering. Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Architecture, Discrete Structures, and Artificial Intelligence.",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2025 - Present",
   },
@@ -47,6 +48,17 @@ export const projectsData = [
     githubUrl: "https://github.com/Aneesh-382005/AcademicAlly",
     demoUrl: "https://timetable.acmthapar.in/",
   },
+
+  {
+    title: "Campus-Compute",
+    description:
+      "Distributed compute framework with a centralized coordinator and heterogeneous workers. Features real-time telemetry dashboard and Dockerized workloads.",
+    tags: ["Python", "FastAPI", "WebSockets", "Docker", "Distributed Systems"],
+    imageUrl: campusComputeImg,
+    githubUrl: "https://github.com/Aneesh-382005/campus-compute",
+    demoUrl: "",
+  },
+
   {
     title: "Playground: Text-to-Manim",
     description:
@@ -66,6 +78,7 @@ export const projectsData = [
     githubUrl: "https://github.com/kshitiz510/patch-it",
     demoUrl: "",
   },
+
   {
     title: "Audio Deepfake Detection",
     description:
