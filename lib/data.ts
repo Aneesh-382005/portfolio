@@ -9,6 +9,7 @@ import deepResearchImg from "@/public/deepResearch.png";
 import patchItImg from "@/public/patchIt.png";
 import playgroundImg from "@/public/playground.png";
 import campusComputeImg from "@/public/campusCompute.png";
+import focusBoardImg from "@/public/FocusBoard.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -39,6 +40,15 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "FocusBoard - Whiteboard Task Capture",
+    description:
+      "Android app that scans whiteboards, extracts structured JSON, and pushes tasks to a shared E-Ink display.",
+    tags: ["Kotlin", "FastAPI", "CRAFT", "TrOCR", "Phi-3 Mini", "TFLite"],
+    imageUrl: focusBoardImg,
+    githubUrl: "https://github.com/Focus-Board",
+    demoUrl: "",
+  },
   {
     title: "AcademicAlly",
     description:
@@ -79,6 +89,7 @@ export const projectsData = [
     demoUrl: "",
   },
 
+  /*
   {
     title: "Audio Deepfake Detection",
     description:
@@ -88,7 +99,6 @@ export const projectsData = [
     githubUrl: "https://github.com/Aneesh-382005/Audio-Deepfake-Detection",
     demoUrl: "",
   },
-  /*
   {
     title: "Plug-and-Play Indoor Navigation",
     description:
