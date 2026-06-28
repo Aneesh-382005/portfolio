@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Resume Proxy
+
+The portfolio keeps the same public resume path:
+
+`/Aneesh_Grover_Resume.pdf`
+
+In production, Next.js rewrites that path to the URL stored in `NEXT_PUBLIC_RESUME_URL`.
+
+Set `NEXT_PUBLIC_RESUME_URL` to the final PDF URL from the separate resume repository, for example:
+
+`https://aneesh-382005.github.io/resume-LaTeX/Aneesh_Grover_Resume.pdf`
+
+If `NEXT_PUBLIC_RESUME_URL` is not set, the app falls back to the local file in `public/` for development.
+
+Note: the app now proxies requests to `/Aneesh_Grover_Resume.pdf` through an API route `/api/resume` which fetches the external PDF and forces an `inline` Content-Disposition. This avoids browsers treating the raw GitHub Pages URL as a download.
