@@ -6,7 +6,13 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'No resume URL configured' }, { status: 400 });
   }
 
-  const res = await fetch(resumeUrl);
+  let res: Response;
+  try {
+    res = await fetch(resumeUrl);
+  } catch {
+    return NextResponse.json({ error: 'Failed to fetch resume' }, { status: 502 });
+  }
+
   if (!res.ok) {
     return NextResponse.json({ error: 'Failed to fetch resume' }, { status: 502 });
   }
