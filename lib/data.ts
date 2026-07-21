@@ -3,13 +3,15 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import academicAllyImg from "@/public/academicAlly.png";
-import audioDeepfakeImg from "@/public/audioDeepfake.png";
-import indoorNavImg from "@/public/indoorNav.png";
-import deepResearchImg from "@/public/deepResearch.png";
-import patchItImg from "@/public/patchIt.png";
+// import audioDeepfakeImg from "@/public/audioDeepfake.png";
+// import indoorNavImg from "@/public/indoorNav.png";
+// import deepResearchImg from "@/public/deepResearch.png";
+// import patchItImg from "@/public/patchIt.png";
 import playgroundImg from "@/public/playground.png";
 import campusComputeImg from "@/public/campusCompute.png";
 import focusBoardImg from "@/public/FocusBoard.png";
+import folioMcpImg from "@/public/folioMcp.png";
+import orbitalImg from "@/public/orbital.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -41,6 +43,16 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "folio.mcp - Personal MCP Server",
+    description:
+      "Remote MCP server on Cloudflare Workers that exposes my GitHub activity, portfolio data, and a contact tool for LLMs to call directly.",
+    tags: ["TypeScript", "Cloudflare Workers", "Hono", "MCP SDK"],
+    imageUrl: folioMcpImg,
+    githubUrl: "https://github.com/Aneesh-382005/folio.mcp",
+    demoUrl: "https://mcp.aneeshgrover.me/",
+  },
+
+  {
     title: "FocusBoard - Whiteboard Task Capture",
     description:
       "Android app that scans whiteboards, extracts structured JSON, and pushes tasks to a shared E-Ink display.",
@@ -70,6 +82,16 @@ export const projectsData = [
   },
 
   {
+    title: "Orbital - Cloud IDE Control Plane",
+    description:
+      "Lightweight control plane that spins up isolated VS Code environments on demand, with JWT auth, a Docker provisioner, and a reconciler for workspace lifecycle.",
+    tags: ["Go", "Docker", "REST APIs", "Control Plane"],
+    imageUrl: orbitalImg,
+    githubUrl: "https://github.com/Aneesh-382005/Orbital",
+    demoUrl: "",
+  },
+
+  {
     title: "Playground: Text-to-Manim",
     description:
       "Turn algorithm and math ideas into rendered Manim CE animations from a simple prompt.",
@@ -79,6 +101,7 @@ export const projectsData = [
     demoUrl: "https://playground.aneeshgrover.me/",
   },
 
+  /*
   {
     title: "PatchIt - Civic Infrastructure Monitoring",
     description:
@@ -88,8 +111,6 @@ export const projectsData = [
     githubUrl: "https://github.com/kshitiz510/patch-it",
     demoUrl: "",
   },
-
-  /*
   {
     title: "Audio Deepfake Detection",
     description:
@@ -108,7 +129,6 @@ export const projectsData = [
     githubUrl: "https://github.com/Aneesh-382005/smart-store-map",
     demoUrl: "https://smart-store-map.vercel.app/admin",
   },
-  */
   {
     title: "DeepResearch - Multi-Agent Research Assistant",
     description:
@@ -118,30 +138,29 @@ export const projectsData = [
     githubUrl: "https://github.com/Aneesh-382005/DeepResearch",
     demoUrl: "",
   },
-
-  
-  
+  */
 ] as const;
 
 export const skillsData = [
-  // Software Engineering & Full-Stack
-  "TypeScript", "Python", "Java",
-  "Next.js", "React", "FastAPI",
-  "Supabase", "PostgreSQL",
-  "API Design", "System Design",
-
-  // Machine Learning Engineering
-  "PyTorch", "Deep Learning",
-  "Transformers", "RAG Systems", "FAISS",
-  "MLOps",
-
-  // Applied AI
-  "CV Pipelines (OpenCV, Detection, OCR)",
-
-  // Data & Analysis
-  "Pandas", "NumPy", "Scikit-learn",
-
-  // Infra & Deployment
-  "Git", "CUDA",
-  "Vercel", "Oracle Cloud (OCI)", "Cloudflare",
+  {
+    heading: "Interfaces",
+    subheading: "Tools for Agents",
+    description:
+      "Interfaces LLMs use to act, not just apps for humans to click through.",
+    tags: ["TypeScript", "MCP", "Cloudflare Workers", "Hono", "REST APIs", "Next.js"],
+  },
+  {
+    heading: "Infrastructure",
+    subheading: "Systems for Developers",
+    description:
+      "Control planes and distributed systems that other tools get built on.",
+    tags: ["Go", "Docker", "WebSockets", "Distributed Systems", "FastAPI", "Vercel", "Oracle Cloud (OCI)"],
+  },
+  {
+    heading: "Intelligence",
+    subheading: "Systems that Learn",
+    description:
+      "Detection, OCR, and retrieval systems turning messy input into structured signal.",
+    tags: ["PyTorch", "Transformers", "RAG", "FAISS", "OpenCV", "Pandas", "CUDA"],
+  },
 ] as const;
