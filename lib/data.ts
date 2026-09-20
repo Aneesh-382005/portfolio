@@ -24,6 +24,22 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineering Co-op - EventPin, Inc.",
+    location: "Holland, OH",
+    description:
+      "Backend co-op building features and improving performance on a live event-discovery platform.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sept 2026 - Jan 2027",
+  },
+  {
+    title: "Computer Science Tutor - University of Toledo Learning Enhancement Center",
+    location: "Toledo, OH",
+    description:
+      "Course tutor for Non-Linear Data Structures, Software Engineering, and Database Management Systems.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Sept 2026 - Present",
+  },
+  {
     title: "University of Toledo",
     location: "Toledo, OH",
     description:
