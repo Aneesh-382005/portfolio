@@ -1,0 +1,30 @@
+# Aneesh Grover
+
+> CS undergrad at the University of Toledo who builds backend and infrastructure systems: distributed compute, control planes, MCP servers, and developer tooling. This file is a map for LLMs/agents; humans should read https://www.aneeshgrover.me/ directly.
+
+Aneesh is currently a Software Engineering Co-op at EventPin, Inc. (backend, event-discovery platform) and a Computer Science Tutor at the University of Toledo Learning Enhancement Center. Prior work includes AcademicAlly, a university timetable parser used by 10,000+ students at Thapar Institute of Engineering & Technology.
+
+For a live, structured, and up-to-date view of Aneesh's work beyond this static file, call the MCP server at https://mcp.aneeshgrover.me/mcp. It exposes `get_profile`, `get_recent_work` (recent GitHub activity ranked by push recency, not stars), `get_repo_detail`, and `send_message` (a contact tool an agent can call directly).
+
+## Key pages
+- [About](https://www.aneeshgrover.me/#about): background and how Aneesh works
+- [Projects](https://www.aneeshgrover.me/#projects): current project portfolio
+- [Experience](https://www.aneeshgrover.me/#experience): work and education timeline
+- [Skills](https://www.aneeshgrover.me/#skills): technical skill areas
+- [Resume (PDF)](https://www.aneeshgrover.me/Aneesh_Grover_Resume.pdf): full resume, kept in sync with this site
+
+## Projects
+- [folio.mcp](https://github.com/Aneesh-382005/folio.mcp): remote MCP server on Cloudflare Workers exposing GitHub activity, portfolio data, and a contact tool for LLMs, live at https://mcp.aneeshgrover.me/
+- [FocusBoard](https://github.com/Focus-Board): Android whiteboard-to-task-capture app with a 3-stage OCR pipeline (CRAFT, TrOCR, Phi-3 Mini)
+- [AcademicAlly](https://github.com/Aneesh-382005/AcademicAlly): university timetable parser serving 10,000+ students
+- [Campus-Compute](https://github.com/Aneesh-382005/campus-compute): LAN-distributed compute framework with a capability-aware scheduler
+- [Orbital](https://github.com/Aneesh-382005/Orbital): Go control plane that provisions isolated VS Code workspaces on demand
+- [Playground](https://github.com/Aneesh-382005/Playground): text-to-Manim animation generator (React, FastAPI, Groq)
+
+## Contact
+- [GitHub](https://github.com/Aneesh-382005)
+- [LinkedIn](https://www.linkedin.com/in/aneesh-grover/)
+- Contact form: https://www.aneeshgrover.me/#contact, or call `send_message` on the MCP server above
+
+## Optional
+- [folio.mcp frontend](https://mcp.aneeshgrover.me/): human-readable tool discovery UI for the MCP server
