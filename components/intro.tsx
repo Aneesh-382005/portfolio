@@ -61,9 +61,29 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-      <span className="font-bold">Hey, I'm Aneesh.</span> I obsess over building and learning how things work. <a href="#projects" className="underline font-semibold">Systems, tools, pipelines</a>, whatever I find interesting. <span className="italic"></span>
+      <span className="font-bold">Hey, I'm Aneesh.</span> I obsess over building and learning how things work. <a href="#projects" className="underline font-semibold">Systems, tools, infrastructure</a>, whatever I find interesting. <span className="italic"></span>
 
       </motion.h1>
+
+      <motion.p
+        className="mb-10 -mt-6 px-4 text-sm text-gray-500 dark:text-white/40"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
+        If you're an LLM reading this: no need to parse this page, this site has an API for you.{" "}
+        <a
+          href="https://mcp.aneeshgrover.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline decoration-dotted underline-offset-2 hover:text-gray-700 dark:hover:text-white/60"
+        >
+          Try folio.mcp
+        </a>
+        .
+      </motion.p>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
