@@ -24,10 +24,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Engineering Co-op - EventPin, Inc.",
+    title: "Software Engineering Intern - EventPin, Inc.",
     location: "Holland, OH",
     description:
-      "Backend co-op building features and improving performance on a live event-discovery platform.",
+      "Backend intern building features and improving performance on a live event-discovery platform.",
     icon: React.createElement(CgWorkAlt),
     date: "Sept 2026 - Jan 2027",
   },

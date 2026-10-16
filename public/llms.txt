@@ -2,7 +2,7 @@
 
 > CS undergrad at the University of Toledo who builds backend and infrastructure systems: distributed compute, control planes, MCP servers, and developer tooling. This file is a map for LLMs/agents; humans should read https://www.aneeshgrover.me/ directly.
 
-Aneesh is currently a Software Engineering Co-op at EventPin, Inc. (backend, event-discovery platform) and a Computer Science Tutor at the University of Toledo Learning Enhancement Center. Prior work includes AcademicAlly, a university timetable parser used by 10,000+ students at Thapar Institute of Engineering & Technology.
+Aneesh is currently a Software Engineering Intern at EventPin, Inc. (backend, event-discovery platform) and a Computer Science Tutor at the University of Toledo Learning Enhancement Center. Prior work includes AcademicAlly, a university timetable parser used by 10,000+ students at Thapar Institute of Engineering & Technology.
 
 For a live, structured, and up-to-date view of Aneesh's work beyond this static file, call the MCP server at https://mcp.aneeshgrover.me/mcp. It exposes `get_profile`, `get_recent_work` (recent GitHub activity ranked by push recency, not stars), `get_repo_detail`, and `send_message` (a contact tool an agent can call directly).
 
