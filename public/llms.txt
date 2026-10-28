@@ -1,6 +1,6 @@
 # Aneesh Grover
 
-> CS undergrad at the University of Toledo who builds backend and infrastructure systems: distributed compute, control planes, MCP servers, and developer tooling. This file is a map for LLMs/agents; humans should read https://www.aneeshgrover.me/ directly.
+> CS undergrad at the University of Toledo who builds backend and infrastructure systems: dev environment tooling, autonomous agents, MCP servers, and developer tooling. This file is a map for LLMs/agents; humans should read https://www.aneeshgrover.me/ directly.
 
 Aneesh is currently a Software Engineering Intern at EventPin, Inc. (backend, event-discovery platform) and a Computer Science Tutor at the University of Toledo Learning Enhancement Center. Prior work includes AcademicAlly, a university timetable parser used by 10,000+ students at Thapar Institute of Engineering & Technology.
 
@@ -17,8 +17,8 @@ For a live, structured, and up-to-date view of Aneesh's work beyond this static 
 - [folio.mcp](https://github.com/Aneesh-382005/folio.mcp): remote MCP server on Cloudflare Workers exposing GitHub activity, portfolio data, and a contact tool for LLMs, live at https://mcp.aneeshgrover.me/
 - [FocusBoard](https://github.com/Focus-Board): Android whiteboard-to-task-capture app with a 3-stage OCR pipeline (CRAFT, TrOCR, Phi-3 Mini)
 - [AcademicAlly](https://github.com/Aneesh-382005/AcademicAlly): university timetable parser serving 10,000+ students
-- [Campus-Compute](https://github.com/Aneesh-382005/campus-compute): LAN-distributed compute framework with a capability-aware scheduler
-- [Orbital](https://github.com/Aneesh-382005/Orbital): Go control plane that provisions isolated VS Code workspaces on demand
+- [Orbital](https://github.com/Aneesh-382005/Orbital): cloud dev environment manager, provisions isolated VS Code workspaces on demand
+- [Nightshift](https://github.com/Aneesh-382005/nightshift): policy-gated AI agent that fixes broken devices overnight, with snapshotted auto-rollback and physical approval for risky fixes
 - [Playground](https://github.com/Aneesh-382005/Playground): text-to-Manim animation generator (React, FastAPI, Groq)
 
 ## Contact

@@ -8,10 +8,10 @@ import academicAllyImg from "@/public/academicAlly.png";
 // import deepResearchImg from "@/public/deepResearch.png";
 // import patchItImg from "@/public/patchIt.png";
 import playgroundImg from "@/public/playground.png";
-import campusComputeImg from "@/public/campusCompute.png";
 import focusBoardImg from "@/public/FocusBoard.png";
 import folioMcpImg from "@/public/folioMcp.png";
 import orbitalImg from "@/public/orbital.png";
+import nightshiftImg from "@/public/nightshift.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -48,10 +48,10 @@ export const experiencesData = [
     date: "Aug 2025 - Present",
   },
   {
-    title: "AcademicAlly - ACM Thapar Society Project",
+    title: "AcademicAlly - ACM Thapar Student Chapter",
     location: "Thapar Institute of Engineering & Technology",
     description:
-      "Built and maintained a production-grade university timetable parser used by 10,000+ students. Designed the backend using Python, Pandas, and Openpyxl, cutting parsing errors by 95%. Deployed and actively maintained with ongoing improvements and updates.",
+      "Built and maintained a production-grade university timetable parser used by 10,000+ students. Designed the backend using Python, Pandas, and Openpyxl, cutting parsing errors by 95%.",
     icon: React.createElement(CgWorkAlt),
     date: "Jul 2024 - Aug 2025",
   },
@@ -88,22 +88,22 @@ export const projectsData = [
   },
 
   {
-    title: "Campus-Compute",
+    title: "Orbital - Cloud Dev Environment Manager",
     description:
-      "Distributed compute framework with a centralized coordinator and heterogeneous workers. Features real-time telemetry dashboard and Dockerized workloads.",
-    tags: ["Python", "FastAPI", "WebSockets", "Docker", "Distributed Systems"],
-    imageUrl: campusComputeImg,
-    githubUrl: "https://github.com/Aneesh-382005/campus-compute",
+      "Spins up isolated VS Code environments on demand, with JWT auth, a Docker provisioner, and state reconciliation so no workspace runs unaccounted for.",
+    tags: ["Go", "Docker", "REST APIs"],
+    imageUrl: orbitalImg,
+    githubUrl: "https://github.com/Aneesh-382005/Orbital",
     demoUrl: "",
   },
 
   {
-    title: "Orbital - Cloud IDE Control Plane",
+    title: "Nightshift - Autonomous Device Fixer",
     description:
-      "Lightweight control plane that spins up isolated VS Code environments on demand, with JWT auth, a Docker provisioner, and a reconciler for workspace lifecycle.",
-    tags: ["Go", "Docker", "REST APIs", "Control Plane"],
-    imageUrl: orbitalImg,
-    githubUrl: "https://github.com/Aneesh-382005/Orbital",
+      "An AI agent that fixes what breaks on your devices overnight: policy-gated, snapshotted, and auto-rolled-back if a health check fails. Risky fixes wait for a physical approval press; built solo at MHacks 26.",
+    tags: ["TypeScript", "SpacetimeDB", "MCP", "Self-Hosted"],
+    imageUrl: nightshiftImg,
+    githubUrl: "https://github.com/Aneesh-382005/nightshift",
     demoUrl: "",
   },
 
@@ -169,14 +169,7 @@ export const skillsData = [
     heading: "Infrastructure",
     subheading: "Systems for Developers",
     description:
-      "Control planes and distributed systems that other tools get built on.",
+      "Distributed systems and backend services that other tools get built on.",
     tags: ["Go", "Docker", "WebSockets", "Distributed Systems", "FastAPI", "Vercel", "Oracle Cloud (OCI)"],
-  },
-  {
-    heading: "Intelligence",
-    subheading: "Systems that Learn",
-    description:
-      "Detection, OCR, and retrieval systems turning messy input into structured signal.",
-    tags: ["PyTorch", "Transformers", "RAG", "FAISS", "OpenCV", "Pandas", "CUDA"],
   },
 ] as const;

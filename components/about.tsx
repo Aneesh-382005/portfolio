@@ -51,7 +51,7 @@ export default function About() {
                         Honestly, it's my fascination with building things. I don't need a class, an assignment, or a deadline to start a project. I just get fascinated by a problem and can't stop until I've built something around it.
                     </p>
                     <p className="mt-3">
-                        Campus Compute started at a hackathon. Orbital, another one of my projects [where a user can spin up isolated VSCode workspaces], started as a missed internship deadline I refused to abandon. The pattern is usually the same: curiosity first, then momentum, then a project that teaches me more than I expected.
+                        Orbital started as a missed internship deadline I refused to abandon. Nightshift started as a hunch at a hackathon that an agent could fix things while I slept. The pattern is usually the same: curiosity first, then momentum, then a project that teaches me more than I expected.
                     </p>
                     <p className="mt-3">
                         That's how I am with other things I am doing right now, and that is what I feel the essence of engineering is.

@@ -76,8 +76,9 @@ export default function Project({
 
         <Image
           src={imageUrl}
-          alt="Project I worked on"
+          alt={title}
           quality={95}
+          sizes="(min-width: 640px) 28.25rem, 0px"
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]

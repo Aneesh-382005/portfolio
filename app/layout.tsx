@@ -10,9 +10,28 @@ import ThemeSwitch from "@/components/theme-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "Aneesh Grover | Personal Website";
+const description = "Building software that works, occasionally the first time.";
+
 export const metadata: Metadata = {
-  title: "Aneesh Grover | Personal Website",
-  description: "Building software that works, occassionally the first time.",
+  title,
+  description,
+  metadataBase: new URL("https://www.aneeshgrover.me"),
+  openGraph: {
+    title,
+    description,
+    url: "https://www.aneeshgrover.me",
+    siteName: "Aneesh Grover",
+    images: ["/profile.jpeg"],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: ["/profile.jpeg"],
+  },
 };
 
 export default function RootLayout({

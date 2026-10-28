@@ -1,5 +1,4 @@
 import Intro from '@/components/intro';
-import { Suspense } from 'react';
 import SectionDivider from '@/components/section-divider';
 import About from '@/components/about';
 import Projects from '@/components/projects';
@@ -15,9 +14,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Contact />
-      </Suspense>
+      <Contact />
     </main>
   );
 }
